@@ -18,4 +18,4 @@ app.post("/", function(req,res){
    res.writeHead(200, {'Content-Type': 'text/json'});
    res.end(JSON.stringify(jsonData));
 });
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
